@@ -4,6 +4,13 @@
 
 适合做多语言界面稿时快速替换文案，省去「复制文字 → 打开翻译网站 → 粘贴回来 → 改字体」的重复劳动。
 
+> [!IMPORTANT]
+> **使用前必做：把占位符换成你自己的 API Key**
+>
+> 仓库里的 `DEEPSEEK_API_KEY` 是占位符 `sk-xxxxxxxxxxx`，**不替换就翻译不了**（请求会被 DeepSeek 拒绝）。
+> 下载后打开 `index.html`，找到第 33 行 `const DEEPSEEK_API_KEY = "sk-xxxxxxxxxxx";`，把引号内的内容换成你自己的 [DeepSeek API Key](https://platform.deepseek.com/api_keys)，保存，再在 MasterGo 里重新运行插件即可。
+> 完整步骤见下方[配置](#配置)一节。
+
 ## 功能
 
 - 批量翻译：一次处理选中范围内的所有文字图层
@@ -32,9 +39,10 @@
 
 ## 安装
 
-1. 下载本仓库（`Code` → `Download ZIP`，或 `git clone`）
+1. 下载本插件：[Releases](https://github.com/KiKiaaaaaa/mastergo-translate-plugin/releases) 里的 `mastergo-translate-plugin-v1.0.0.zip`（解压即用），或点 `Code` → `Download ZIP`，或 `git clone`
 2. 打开 MasterGo 桌面端，在插件面板中选择「导入本地插件」
-3. 选中本目录下的 `manifest.json` 完成导入
+3. 选中解压目录下的 `manifest.json` 完成导入
+4. **别急着用**：先按下方[配置](#配置)填入你自己的 API Key
 
 ## 配置
 
