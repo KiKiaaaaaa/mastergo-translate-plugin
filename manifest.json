@@ -1,0 +1,13 @@
+{
+  "name": "翻译工具",
+  "id": 203486881952383,
+  "main": "index.js",
+  "ui": "index.html",
+  "editor_type": [
+    "canvas",
+    "devMode"
+  ],
+  "capabilities": [
+    "inspect"
+  ]
+}
